@@ -3,4 +3,5 @@
     <string name="text_label_1">Page 1</string>
     <string name="text_label_2">Page 2</string>
     <string name="text_label_3">Page 3</string>
+    <string name="contentDesc">mail</string>
 </resources>
