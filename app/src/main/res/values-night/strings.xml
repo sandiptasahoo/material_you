@@ -5,4 +5,6 @@
     <string name="text_label_3">Page 3</string>
     <string name="contentDesc">mail</string>
     <string name="outlined_button">Outlined button</string>
+    <string name="page_title">Material You</string>
+    <string name="edit">Edit</string>
 </resources>
