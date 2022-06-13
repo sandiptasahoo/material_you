@@ -10,6 +10,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import com.example.starterm3.databinding.ActivityMainBinding
+import com.google.android.material.elevation.SurfaceColors
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +23,15 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val color = SurfaceColors.SURFACE_5.getColor(this)
+        val color1 = getColor(R.color.md_theme_light_primary)
+            // Resources.getSystem().getColor(R.color.md_theme_light_onPrimary)
+
+        window.apply {
+            //statusBarColor = color
+            //navigationBarColor = color
+        }
+        //binding.topAppBar.setBackgroundColor(color1)
         binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
@@ -39,7 +49,7 @@ class MainActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.edit -> true
+            R.id.more -> true
             else -> super.onOptionsItemSelected(item)
         }
     }
